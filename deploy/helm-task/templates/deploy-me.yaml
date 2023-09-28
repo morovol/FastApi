@@ -21,7 +21,7 @@ spec:
             - name: ME_CONFIG_MONGODB_ADMINPASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: app-pass
+                  name: app-pass-task
                   key: key
             - name: ME_CONFIG_MONGODB_SERVER
               value: {{ .Values.pathDB }}
