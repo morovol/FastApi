@@ -21,7 +21,7 @@ spec:
             - name: MONGO_INITDB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: app-pass-task
+                  name: app-pass
                   key: key
           ports:
             - containerPort: 27017
@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: mongodb-persistent-storage
         persistentVolumeClaim:
-          claimName: pvc-ad087406-509d-4794-a71f-4a2305be98a6
+          claimName: pvc
