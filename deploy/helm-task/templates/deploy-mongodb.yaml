@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: mongodb-persistent-storage
         persistentVolumeClaim:
-          claimName: pvc
+          claimName: pvc-ad087406-509d-4794-a71f-4a2305be98a6
