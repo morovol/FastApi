@@ -4,7 +4,12 @@ metadata:
   name: app-me
   namespace: {{ .Values.namespace }}
 spec:
-  replicas: {{ .Values.countreplic }}
+  {{- if (eq .Values.namespace .Values.env.dev) }}
+  replicas: 1
+  {{- else }}
+  replicas: 3
+  {{- end }}
+
   selector:
     matchLabels:
       app: app-me
