@@ -31,10 +31,10 @@ rules:
   resources: ["secrets", "services", "persistentvolumeclaims"]
   verbs: ["*"]
 - apiGroups: ["apps"]
-  resources: [ "deployments"]
+  resources: ["deployments"]
   verbs: ["*"]
 - apiGroups: [""]
-  resources: [ "serviceaccounts"]
+  resources: ["serviceaccounts"]
   verbs: ["*"]
 
 ---
