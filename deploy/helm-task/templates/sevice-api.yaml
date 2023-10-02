@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app-deployment-service
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     app: app-deploy
@@ -15,6 +16,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb-deployment-service
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     app:  mongo-db
@@ -28,6 +30,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app-me-deployment-service
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     app: app-me
