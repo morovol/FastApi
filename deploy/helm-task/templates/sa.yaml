@@ -52,7 +52,7 @@ subjects:
   name: jenkins
 - kind: ServiceAccount
   name: default
-  namespace: jenkins
+  namespace: {{ .Values.namespace }}
 - kind: ServiceAccount
   name: jenkins
   namespace: {{ .Values.namespace }}
