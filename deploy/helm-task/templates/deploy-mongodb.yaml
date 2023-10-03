@@ -4,8 +4,8 @@ metadata:
   name: mongo-db
   namespace: {{ .Values.namespace }}
 spec:
-   replicas: 1
-   selector:
+  replicas: 1
+  selector:
     matchLabels:
       app: mongo-db
   template:
