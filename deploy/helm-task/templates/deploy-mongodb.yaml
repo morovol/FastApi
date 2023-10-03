@@ -4,13 +4,8 @@ metadata:
   name: mongo-db
   namespace: {{ .Values.namespace }}
 spec:
-  {{- if (eq .Values.namespace .Values.env.dev) }}
-  replicas: 1
-  {{- else }}
-  replicas: 3
-  {{- end }}
-
-  selector:
+   replicas: 1
+   selector:
     matchLabels:
       app: mongo-db
   template:
