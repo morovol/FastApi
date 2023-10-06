@@ -7,6 +7,7 @@ password: ${ME_CONFIG_MONGODB_ADMINPASSWORD}
 namespace: jenkins
 countreplic: 1
 secret: UGFzc3dvcmQxMjM0
+tag_name: latest
 
 env:
   dev: dev
