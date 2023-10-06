@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: morovol/fastapi: {{ .Values.tag_name }}
+          image: 'morovol/fastapi:{{ .Values.tag_name }}'
           env:
             - name: MONGOHOST
               value: {{ .Values.pathDB }}
